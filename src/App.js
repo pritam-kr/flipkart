@@ -1,14 +1,10 @@
 import "./App.css";
 import { Nav } from "./components/Nav/Nav";
-
 import { useProductContext } from "./context/productContext";
-
 import { Card } from "./components/productCard/Card";
-
 function App() {
   const {  state, dispatch, getUniqueSizes, filteredProducts } =
     useProductContext();
-
 
     const filterClearHandler = () => {
       dispatch({type: "FILTER_CLEAR", payload: {price: "", size: [], brand: "", category: ""}})

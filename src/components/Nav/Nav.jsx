@@ -1,7 +1,7 @@
 import React from "react";
 import "./nav.css";
 import * as FaIcons from "react-icons/fa";
-import { Link } from "react-router-dom";
+ 
 
 const Nav = () => {
   return (

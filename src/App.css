@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+    --primary-color: #2874F0;
+    --primary-heading: #212121;
+--border-color: rgba(0, 0, 0, 0.128);
+--primary-hover: #1d5cc1;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-heading);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.main {
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
 }
 
-.App-link {
-  color: #61dafb;
+.main-wrapper {
+    max-width: 1550px;
+    display: flex;
+}
+ 
+.sidebar-filter, .product-container{
+    padding: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar-filter header h1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-wrapper .sidebar-filter {
+    width: 25%;
+    border-right: 1px solid var(--border-color);
+}
+
+.filters-wrapper{
+    padding: 1rem 0;
+}
+
+.filter{
+    padding: .5rem;
+}
+.filter .filter-name{
+    margin-bottom: 1rem;
+}
+.filter label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.filter label input{
+    margin-right: .5rem;
+}
+
+.products-wrapper{
+
+    padding: 1rem;
+
+}
+
+@media screen and (min-width: 767px) {
+    .products-wrapper{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat( 4, minmax(250px, 300px) );
+    }
+    
+}
+
+.images-card{
+    box-shadow: none;
+    border-radius:0;
+    border: 1px solid var(--border-color);
+    background-color: #fff;
+    
+  
+}
+
+.images-card .card-img{
+    border-radius: 0;
+    object-fit: contain;
+    padding: .5rem;
+}
+
+.card-footer{
+    margin-top: auto;
+}
+
+.btn-move-cart{
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+.btn-move-cart:hover{
+background-color: var(--primary-hover);
+}
+.card-content{
+    text-align: center;
+}
+.cloth-size{
+    margin: .3rem 0;
+}
+
+.clear-filter{
+ cursor: pointer;
+ text-decoration: underline;
 }

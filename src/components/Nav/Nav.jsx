@@ -35,7 +35,7 @@ const Nav = () => {
           <Link to="/later">  <li className="lists">Save to later</li> </Link>
 
             <li className="lists center">
-              <Link to="/cart">
+              <Link to="/cart" >
                 {" "}
                 Cart <FaIcons.FaCartPlus className="icons" />
               </Link>

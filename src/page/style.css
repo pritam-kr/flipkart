@@ -1,0 +1,81 @@
+.quantity-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.btn-quantity {
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.quantity {
+    margin: 0 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+
+    padding: 1rem;
+    width: 70%;
+}
+
+.cart-card {
+
+    position: relative;
+}
+
+.btn-delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: .9rem;
+    width: auto;
+    height: auto;
+    margin: .7rem;
+}
+
+.price-calculation {
+    width: 30%;
+    padding: 1rem;
+}
+
+
+.price-calculation-list {
+    margin: 1rem 0;
+}
+
+.price-calculation-list li {
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+
+}
+
+.discount {
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+}

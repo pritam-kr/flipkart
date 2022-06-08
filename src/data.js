@@ -12,6 +12,8 @@ export const products = [
       count: 120,
     },
 
+    quantity: 1,
+    discount: 10,
     size: "M",
     brand: "Binary Textile",
   },
@@ -28,7 +30,10 @@ export const products = [
       rate: 4.1,
       count: 259,
     },
+
+    quantity: 1,
     size: "M",
+    discount: 10,
     brand: "Binary Textile",
   },
   {
@@ -43,7 +48,10 @@ export const products = [
       rate: 4.7,
       count: 500,
     },
+
+    quantity: 1,
     size: "L",
+    discount: 10,
     brand: "Binary Textile",
   },
 
@@ -59,7 +67,10 @@ export const products = [
       rate: 2.1,
       count: 430,
     },
+
+    quantity: 1,
     size: "S",
+    discount: 10,
     brand: "Binary Textile",
   },
   {
@@ -74,7 +85,10 @@ export const products = [
       rate: 2.6,
       count: 235,
     },
+
+    quantity: 1,
     size: "XL",
+    discount: 10,
     brand: "Binary Textile",
   },
 
@@ -91,7 +105,10 @@ export const products = [
       rate: 2.9,
       count: 340,
     },
+
+    quantity: 1,
     size: "L",
+    discount: 10,
     brand: "Pearl",
   },
   {
@@ -106,7 +123,10 @@ export const products = [
       rate: 3.8,
       count: 679,
     },
+
+    quantity: 1,
     size: "M",
+    discount: 10,
     brand: "Pearl",
   },
 
@@ -122,7 +142,10 @@ export const products = [
       rate: 4.7,
       count: 130,
     },
+
+    quantity: 1,
     size: "XL",
+    discount: 10,
     brand: "Pearl",
   },
 
@@ -138,7 +161,10 @@ export const products = [
       rate: 4.5,
       count: 146,
     },
+
+    quantity: 1,
     size: "M",
+    discount: 10,
     brand: "Pearl",
   },
 
@@ -154,7 +180,10 @@ export const products = [
       rate: 3.6,
       count: 145,
     },
+
+    quantity: 1,
     size: "S",
+    discount: 10,
     brand: "Pearl",
   },
 ];

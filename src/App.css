@@ -121,3 +121,7 @@ background-color: var(--primary-hover);
  cursor: pointer;
  text-decoration: underline;
 }
+
+.cart-container{
+    padding: 2rem;
+}

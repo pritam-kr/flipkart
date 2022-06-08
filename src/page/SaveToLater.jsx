@@ -1,21 +1,32 @@
 import React from "react";
-import { useCartContext } from "../../context/cartContext";
+import { useCartContext } from "../context/cartContext";
 
-const Card = ({ eachProduct }) => {
+
+const SaveToLater = () => {
+
   const descriptionShort = (str) => {
     return str.split(" ").splice(0, 10).join(" ") + "...";
   };
 
-  const { dispatch} = useCartContext();
+
+  const {
+    state: { later }, dispatch
+  } = useCartContext();
 
 
-
+  
   const addToCartHandler = (eachProduct) => {
     dispatch({ type: "ADD_TO_CART", payload: eachProduct });
   };
 
   return (
-    <div className="images-card">
+    <div className="cart-container">
+      {later.length === 0 ? (
+        <h1>No product save to later</h1>
+      ) : (
+        <div className="cart-wrapper">
+          {
+            later.map((eachProduct) => <div className="images-card">
       <img className="card-img" src={eachProduct.image} alt="products" />
 
       <div className="card-content">
@@ -42,8 +53,12 @@ const Card = ({ eachProduct }) => {
           </button>
         </div>
       </div>
+    </div>)
+          }
+        </div>
+      )}
     </div>
   );
 };
 
-export { Card };
+export { SaveToLater };
